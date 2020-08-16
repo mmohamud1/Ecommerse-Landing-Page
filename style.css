@@ -35,13 +35,13 @@ body {
 .title-2 {
   font-family: "Raleway", sans-serif;
   margin-bottom: 1.5rem;
-  line-height: 3.5rem;
+  line-height: 3rem;
   font-weight: 700;
   font-size: 2.8rem; }
 
 .text-2 {
   font-family: "Raleway", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.7rem;
   margin-bottom: 1.0rem; }
 
@@ -92,6 +92,7 @@ body {
       background-color: white;
       border: none;
       padding: .7rem 2rem;
+      border-radius: 5px;
       width: 90%;
       transition: all .2s;
       margin-right: -3.25rem; }
@@ -100,8 +101,7 @@ body {
         width: 100%;
         background-color: white; }
       .nav-search-input::-webkit-input-placeholder {
-        font-weight: 300;
-        color: darkgray; }
+        font-weight: 400; }
     .nav-search-button {
       height: 46px;
       outline: none;
@@ -110,7 +110,8 @@ body {
   .nav-link {
     text-decoration: none;
     color: #6a6b6d;
-    font-weight: 600; }
+    font-weight: 600;
+    margin: 0 0.3rem; }
     .nav-link:hover {
       text-decoration: underline; }
 
