@@ -81,3 +81,51 @@ body {
     font-weight: 600; }
     .nav-link:hover {
       text-decoration: underline; }
+
+.carousel {
+  height: 70vh;
+  margin-top: 1rem; }
+  .carousel-item {
+    height: 100%;
+    width: 75%;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 2rem 3rem; }
+    .carousel-item-info {
+      color: #fff;
+      width: 60%;
+      padding: 0rem 2.5rem; }
+      .carousel-item-info-title {
+        margin-bottom: 1rem;
+        font-weight: 600;
+        font-size: 2.5rem; }
+      .carousel-item-info-text {
+        line-height: 1.7rem;
+        margin-bottom: 2.5rem; }
+    .carousel-item-image {
+      width: 60%; }
+  .carousel-img {
+    width: 100%;
+    height: auto; }
+  .carousel-1 {
+    background-color: #32cc00; }
+  .carousel-2 {
+    background-color: #ffa500; }
+  .carousel-3 {
+    background-color: #1daadf; }
+
+.carousel .flickity-prev-next-button.previous {
+  left: 210px; }
+
+.carousel .flickity-prev-next-button.next {
+  right: 210px; }
+
+.btn {
+  text-decoration: none;
+  background: #fff;
+  color: #6a6b6d;
+  padding: .6rem 1.3rem;
+  border-radius: 25px; }
