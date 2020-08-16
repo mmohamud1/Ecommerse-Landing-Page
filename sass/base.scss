@@ -1,0 +1,22 @@
+// Colours 
+$color-primary: #6a6b6d;
+$color-background: #f4f5f9;
+
+// Fonts 
+$font-primary: 'Raleway', sans-serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $color-background;
+    font-weight: 300;
+    line-height: 1.6;
+    text-decoration: none;
+	list-style-type: none;
+}
