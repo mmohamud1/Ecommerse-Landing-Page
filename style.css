@@ -7,11 +7,43 @@
 
 body {
   background: #f4f5f9;
+  font-size: 1.1rem;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   line-height: 1.6;
   text-decoration: none;
   list-style-type: none; }
+
+.about-container {
+  margin: 3rem 0rem;
+  padding: 1rem 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem; }
+
+.title-1 {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 2.5rem; }
+
+.text-1 {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7rem;
+  margin-bottom: 2.5rem; }
+
+.title-2 {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1.5rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  font-size: 2.8rem; }
+
+.text-2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  margin-bottom: 1.0rem; }
 
 .nav {
   display: flex;
@@ -98,13 +130,6 @@ body {
       color: #fff;
       width: 60%;
       padding: 0rem 2.5rem; }
-      .carousel-item-info-title {
-        margin-bottom: 1rem;
-        font-weight: 600;
-        font-size: 2.5rem; }
-      .carousel-item-info-text {
-        line-height: 1.7rem;
-        margin-bottom: 2.5rem; }
     .carousel-item-image {
       width: 60%; }
   .carousel-img {
@@ -129,3 +154,29 @@ body {
   color: #6a6b6d;
   padding: .6rem 1.3rem;
   border-radius: 25px; }
+
+.btn-2 {
+  font-weight: 500; }
+  .btn-2:link, .btn-2:visited {
+    color: #6a6b6d;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #6a6b6d;
+    padding: 3px;
+    transition: all .2s; }
+  .btn-2:hover {
+    background-color: #6a6b6d;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(41, 43, 44, 0.15);
+    transform: translateY(-2px); }
+
+.about-card {
+  padding: 3.0rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #6a6b6d;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px; }
