@@ -1,0 +1,96 @@
+.nav {
+    display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+    padding: 0rem 3.5rem;
+    font-family: $font-primary;
+    color: $color-primary;
+
+    &-img {
+        height: 35px;
+        width: 35px;
+    }
+
+    &-logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        width: 20%;
+        color: black;
+    }
+
+    &-toggle {
+        display: none;
+    }
+
+    &-menu {
+        display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+        width: 80%;
+        
+        &-responsive {
+            display: inline-block;
+            width: 70%;
+            
+            &-label {
+                display: none;
+                text-align: right;
+                margin-bottom: 1rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &-search {
+        width: 75%;
+        background: #fff;
+        height: 46px;
+	    flex: 0 0 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        
+        &-input {
+            font-family: inherit;
+            font-size: inherit;
+            color: black;
+            background-color: white;
+            border: none;
+            padding: .7rem 2rem;
+            
+            width: 90%;
+            transition: all .2s;
+            margin-right: -3.25rem;
+            
+
+            &:focus {
+                outline: none;
+                width: 100%;
+                background-color: white;
+            }
+    
+            &::-webkit-input-placeholder {
+                font-weight: 300;
+                color: darkgray;
+            }
+        }
+
+        &-button {
+            height: 46px;
+            outline: none;
+            background: none;
+            border: none;
+        }
+    }
+
+    &-link {
+        text-decoration: none;
+        font-weight: 300;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
