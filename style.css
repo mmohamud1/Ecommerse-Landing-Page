@@ -137,11 +137,11 @@ body {
     width: 100%;
     height: auto; }
   .carousel-1 {
-    background-color: #32cc00; }
-  .carousel-2 {
     background-color: #ffa500; }
-  .carousel-3 {
+  .carousel-2 {
     background-color: #1daadf; }
+  .carousel-3 {
+    background-color: #32cc00; }
 
 .carousel .flickity-prev-next-button.previous {
   left: 210px; }
