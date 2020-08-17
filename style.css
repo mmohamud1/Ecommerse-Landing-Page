@@ -142,7 +142,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
     padding: 2rem 3rem; }
     .carousel-item-info {
       color: #fff;
@@ -227,16 +228,16 @@ body {
     border-top-right-radius: 25px;
     border-top-left-radius: 25px; }
     .promo-card-top-img {
-      height: 10rem;
-      width: 9rem;
+      height: 13rem;
+      width: 12rem;
       position: absolute;
       top: 50%;
       left: 50%;
       margin-right: -50%;
       transform: translate(-50%, -50%); }
   .promo-card-bottom {
-    height: 40%;
-    width: auto;
+    height: auto;
+    width: 15rem;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
@@ -269,3 +270,7 @@ body {
 
 .hot-background {
   background-color: #cdcdff; }
+
+.line-through {
+  text-decoration: line-through;
+  color: #6a6b6d; }

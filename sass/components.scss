@@ -74,8 +74,8 @@
 		border-top-left-radius: 25px;
 
 		&-img {
-			height: 10rem;
-			width: 9rem;
+			height: 13rem;
+			width: 12rem;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -85,8 +85,8 @@
 	}
 
 	&-bottom {
-		height: 40%;
-		width: auto;
+		height: auto;
+		width: 15rem;
 		padding: 1rem 2rem;
 		display: flex;
 		flex-direction: column;
@@ -136,4 +136,9 @@
 
 .hot-background {
 	background-color: #cdcdff;
+}
+
+.line-through {
+	text-decoration: line-through;
+	color: $color-primary;
 }

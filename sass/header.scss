@@ -109,7 +109,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-radius: 5px;
+        border-top-right-radius: 25px;
+		border-top-left-radius: 25px;
         padding: 2rem 3rem;
 
         &-info {
