@@ -5,3 +5,23 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
 }
+
+.promo {
+    padding: 0rem 3.5rem;
+    margin-bottom: 5rem;
+    
+    &-header {
+        color: #ff42a0;
+        margin-bottom: 2rem;
+    }
+}
+
+.hot {
+    padding: 0rem 3.5rem;
+    margin-bottom: 5rem;
+
+    &-header {
+        color: #3333ff;
+        margin-bottom: 2rem;
+    }
+}

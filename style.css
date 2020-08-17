@@ -21,6 +21,20 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem; }
 
+.promo {
+  padding: 0rem 3.5rem;
+  margin-bottom: 5rem; }
+  .promo-header {
+    color: #ff42a0;
+    margin-bottom: 2rem; }
+
+.hot {
+  padding: 0rem 3.5rem;
+  margin-bottom: 5rem; }
+  .hot-header {
+    color: #3333ff;
+    margin-bottom: 2rem; }
+
 .title-1 {
   font-family: "Raleway", sans-serif;
   margin-bottom: 1rem;
@@ -44,6 +58,9 @@ body {
   font-size: 1rem;
   line-height: 1.7rem;
   margin-bottom: 1.0rem; }
+
+.text-center {
+  text-align: center; }
 
 .nav {
   display: flex;
@@ -156,6 +173,21 @@ body {
   padding: .6rem 1.3rem;
   border-radius: 25px; }
 
+.btn-small {
+  text-decoration: none;
+  padding: .2rem .9rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500; }
+
+.btn-pink {
+  background-color: #ff42a0;
+  color: #fff; }
+
+.btn-blue {
+  background-color: #3333ff;
+  color: #fff; }
+
 .btn-2 {
   font-weight: 500; }
   .btn-2:link, .btn-2:visited {
@@ -181,3 +213,59 @@ body {
   color: #6a6b6d;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px; }
+
+.promo-card {
+  background-color: #fff;
+  color: #6a6b6d;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  margin: 0 2rem; }
+  .promo-card-top {
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px; }
+    .promo-card-top-img {
+      height: 10rem;
+      width: 9rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%); }
+  .promo-card-bottom {
+    height: 40%;
+    width: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .promo-card-bottom-rating {
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem; }
+    .promo-card-bottom-title {
+      margin-bottom: 0.1rem; }
+    .promo-card-bottom-text {
+      display: inline-block;
+      font-size: 0.75rem;
+      margin-bottom: 0.35rem; }
+    .promo-card-bottom-price {
+      font-weight: 700;
+      font-size: 1rem; }
+    .promo-card-bottom-button {
+      margin-top: 1rem;
+      text-transform: uppercase; }
+
+.promo-color {
+  color: #ff42a0; }
+
+.promo-background {
+  background-color: #ffd0e7; }
+
+.hot-color {
+  color: #3333ff; }
+
+.hot-background {
+  background-color: #cdcdff; }
