@@ -121,6 +121,18 @@
 	}
 }
 
+.sales-card {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	padding: 3rem 3.5rem;
+	color: $color-primary;
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;
+}
+
 // Utilities
 .promo-color {
 	color: #ff42a0;
@@ -141,4 +153,8 @@
 .line-through {
 	text-decoration: line-through;
 	color: $color-primary;
+}
+
+.sale-col-1 {
+	color: #ff3333;
 }

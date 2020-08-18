@@ -25,3 +25,19 @@
         margin-bottom: 2rem;
     }
 }
+
+.sales {
+    padding: 0rem 3.5rem;
+
+    &-grid-1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 1rem;
+    }
+
+    &-grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+}
