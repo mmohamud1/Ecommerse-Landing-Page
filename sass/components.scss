@@ -62,16 +62,16 @@
 .promo-card {
 	background-color: #fff;
 	color: $color-primary;
-	border-top-right-radius: 25px;
-	border-top-left-radius: 25px;
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;
 	margin: 0 2rem;
 
 	&-top {
 		height: 15rem;
 		width: 15rem;
 		position: relative;
-		border-top-right-radius: 25px;
-		border-top-left-radius: 25px;
+		border-top-right-radius: 50px;
+		border-top-left-radius: 50px;
 
 		&-img {
 			height: 13rem;

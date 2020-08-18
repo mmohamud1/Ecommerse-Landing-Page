@@ -184,8 +184,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
     padding: 2rem 3rem; }
     .carousel-item-info {
       color: #fff;
@@ -260,15 +260,15 @@ body {
 .promo-card {
   background-color: #fff;
   color: #6a6b6d;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
   margin: 0 2rem; }
   .promo-card-top {
     height: 15rem;
     width: 15rem;
     position: relative;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px; }
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px; }
     .promo-card-top-img {
       height: 13rem;
       width: 12rem;
