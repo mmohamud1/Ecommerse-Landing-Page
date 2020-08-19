@@ -223,6 +223,17 @@ body {
   font-size: 1rem;
   font-weight: 500; }
 
+.btn-med {
+  text-decoration: none;
+  padding: .45rem 1.1rem;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  font-weight: 500; }
+
+.btn-grey {
+  background-color: #6a6b6d;
+  color: #fff; }
+
 .btn-pink {
   background-color: #ff42a0;
   color: #fff; }
@@ -345,6 +356,49 @@ body {
         width: 12rem;
         height: 12rem;
         margin-left: 3rem; }
+
+.stock-card {
+  color: #6a6b6d;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-bottom: 2rem;
+  margin-left: 1.9rem; }
+  .stock-card-top {
+    height: 20rem;
+    width: 20rem;
+    position: relative;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    background-color: #6a6b6d; }
+    .stock-card-top-img {
+      height: 18rem;
+      width: 18rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%); }
+  .stock-card-bottom {
+    height: auto;
+    width: 20rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; }
+    .stock-card-bottom-rating {
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem; }
+    .stock-card-bottom-title {
+      margin-bottom: 0.1rem;
+      font-size: 1.5rem; }
+    .stock-card-bottom-text {
+      margin-left: 1.1rem;
+      margin-bottom: .8rem; }
+    .stock-card-bottom-price {
+      font-weight: 700;
+      font-size: 1.3rem; }
 
 .promo-color {
   color: #ff42a0; }
