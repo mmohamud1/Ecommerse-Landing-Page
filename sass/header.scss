@@ -45,7 +45,7 @@
 
     &-search {
         width: 75%;
-        background: #fff;
+        background: $color-white;
         height: 46px;
 	    flex: 0 0 40%;
         display: flex;
@@ -57,7 +57,7 @@
             font-family: inherit;
             font-size: inherit;
             color: black;
-            background-color: white;
+            background-color: $color-white;
             border: none;
             padding: .7rem 2rem;
             border-radius: 5px;
@@ -69,7 +69,7 @@
             &:focus {
                 outline: none;
                 width: 100%;
-                background-color: white;
+                background-color: $color-white;
             }
     
             &::-webkit-input-placeholder {
@@ -114,7 +114,7 @@
         padding: 2rem 3rem;
 
         &-info {
-            color: #fff;
+            color: $color-white;
             width: 60%;
             padding: 0rem 2.5rem;
         }
@@ -130,15 +130,15 @@
     }
 
     &-1 {
-        background-color: #ffa500;
+        background-color: $color-background-one;
     }
 
     &-2 {
-        background-color:#1daadf;
+        background-color:$color-background-two;
     }
 
     &-3 {
-        background-color: #32cc00;
+        background-color: $color-background-three;
     }
 }
 

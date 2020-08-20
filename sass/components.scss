@@ -1,11 +1,28 @@
 // Buttons
 .btn {
     text-decoration: none;
-    background: #fff;
-	color: #6a6b6d;
+    background: $color-white;
+	color: $color-primary;
 	padding: .6rem 1.3rem;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
+
+	&:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.2);
+    }
 }
 
 .btn-small {
@@ -15,6 +32,23 @@
 	border-bottom-right-radius: 25px;
 	font-size: 1rem;
 	font-weight: 500;
+
+	&:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.2);
+    }
 }
 
 .btn-med {
@@ -24,21 +58,23 @@
 	border-bottom-right-radius: 25px;
 	font-size: 1.3rem;
 	font-weight: 500;
-}
 
-.btn-grey {
-	background-color: $color-primary;
-	color: #fff;
-}
+	&:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
 
-.btn-pink {
-	background-color: #ff42a0;
-	color: #fff ;	
-}
-
-.btn-blue {
-	background-color: #3333ff;
-	color: #fff;
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.2);
+    }
 }
 
 .btn-2 {
@@ -56,11 +92,58 @@
 
 	&:hover {
 		background-color: $color-primary;
-		color: #fff;
-		box-shadow: 0 1rem 2rem rgba(41, 43, 44, .15);
+		color: $color-white;
+		box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
     	transform: translateY(-2px);
 	}
 }
+
+.submit-btn {
+    text-decoration: none;
+    background: $color-white;
+    color: $color-primary;
+    padding: .6rem 1.3rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 8.5rem;
+    border: none;
+    cursor: pointer;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+	margin-bottom: 1rem;
+	
+	&:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.2);
+    }
+ }
+
+ .close-btn {
+    background: transparent;
+    font-size: 25px;
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    border: none;
+    cursor: pointer;
+    color: $color-primary;
+
+    &:focus {
+        outline: none;
+    }
+ }
 
 //CARDS
 .about-card {
@@ -69,14 +152,14 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #fff;
+	background-color: $color-white;
 	color: $color-primary;
 	border-top-right-radius: 50px;
 	border-top-left-radius: 50px;
 }
 
 .promo-card {
-	background-color: #fff;
+	background-color: $color-white;
 	color: $color-primary;
 	border-top-right-radius: 50px;
 	border-top-left-radius: 50px;
@@ -97,7 +180,6 @@
 			left: 50%;
 			margin-right: -50%;
 			transform: translate(-50%, -50%);
-
 		}
 	}
 
@@ -143,7 +225,7 @@
 	height: auto;
 	display: flex;
 	align-items: center;
-	background-color: #fff;
+	background-color: $color-white;
 	padding: 3rem 3.5rem;
 	color: $color-primary;
 	border-top-right-radius: 50px;
@@ -175,7 +257,7 @@
 		display: flex;
 		width: 100%;
 		height: auto;
-		background-color: #fff;
+		background-color: $color-white;
 		color: $color-primary;
 		border-top-right-radius: 50px;
 		border-top-left-radius: 50px;
@@ -215,7 +297,6 @@
 		position: relative;
 		border-top-right-radius: 50px;
 		border-top-left-radius: 50px;
-		background-color: #aaabac;
 
 		&-img {
 			height: 18rem;
@@ -236,7 +317,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		background-color: #fff;
+		background-color: $color-white;
 
 		&-rating {
 			font-size: 1.3rem;
