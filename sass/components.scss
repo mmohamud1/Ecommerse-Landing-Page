@@ -7,6 +7,11 @@
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 
+	@include respond(tab-port) {
+		font-size: 0.8rem;
+		padding: .4rem 1.2rem;
+    }
+
 	&:hover {
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
@@ -79,6 +84,16 @@
 
 .btn-2 {
 	font-weight: 500;
+
+	@include respond(tab-land) {
+		font-size: 1rem;
+	}
+
+	@include respond(tab-port) {
+		font-size: 0.5rem;
+	}
+
+
 	
 	&:link,
 	&:visited {
@@ -148,7 +163,16 @@
  // CAROUSEL
 .carousel {
     height: 70vh;
-    margin-top: 1rem;
+	margin-top: 1rem;
+	
+	@include respond(tab-port) {
+	   position: relative;
+	   height: 21rem;
+	}
+	
+	@include respond(tab-port) {
+		height: 18rem;
+	 }
     
     &-item {
         height: 70vh;
@@ -159,16 +183,41 @@
         align-items: center;
         border-top-right-radius: 50px;
 		border-top-left-radius: 50px;
-        padding: 2rem 3rem;
+		padding: 2rem 3rem;
+		
+		@include respond(tab-port) {
+			display: block;
+			width: 100%;
+			height: 21rem;
+			border-top-right-radius: 0px;
+			border-top-left-radius: 0px;
+		}
+
+		@include respond(phone) {
+			height: 18rem;
+		}
 
         &-info {
             color: $color-white;
             width: 60%;
-            padding: 0rem 2.5rem;
+			padding: 0rem 2.5rem;
+			
+			@include respond(tab-port) {
+				padding: 0rem 0rem;
+				margin-bottom: 0.1rem;
+			}
+		
         }
 
         &-image {
-            width: 60%;
+			width: 60%;
+			
+			@include respond(tab-port) {
+				position: absolute;
+				width: 38%;
+				right: 1rem;
+				top: 1rem;
+			}
         }
     }
 
@@ -191,11 +240,19 @@
 }
 
 .carousel .flickity-prev-next-button.previous {
-    left: 10.5rem;
+	left: 10.5rem;
+	
+	@include respond(tab-port) {
+		left: 1.5rem;
+	}
 }
   
 .carousel .flickity-prev-next-button.next {
-    right: 10.5rem;
+	right: 10.5rem;
+	
+	@include respond(tab-port) {
+		right: 1.5rem;
+	}
 }
 //CARDS
 .about-card {
@@ -208,6 +265,14 @@
 	color: $color-primary;
 	border-top-right-radius: 50px;
 	border-top-left-radius: 50px;
+
+	@include respond(tab-port) {
+        padding: 1.5rem 2.5rem;
+	}
+	
+	@include respond(phone) {
+        padding: 1rem 1.5rem;
+    }
 }
 
 .promo-card {
@@ -283,8 +348,28 @@
 	border-top-right-radius: 50px;
 	border-top-left-radius: 50px;
 
+	@include respond(tab-port) {
+        padding: 2rem 2.5rem;
+	}
+	
+	@include respond(phone) {
+        padding: 1rem 1.5rem;
+    }
+
 	&-text {
 		width: 50%;
+
+		@include respond(tab-land) {
+			width: 40%;
+		}
+
+		@include respond(tab-port) {
+			width: 25%;
+		}
+
+		@include respond(phone) {
+			width: 20%;
+		}
 	}
 
 	&-img {
@@ -294,6 +379,16 @@
 		&-1 {
 			width: 20rem;
 			height: 25rem;
+
+			@include respond(tab-port) {
+				width: 13rem;
+				height: 13rem;
+			}
+
+			@include respond(phone) {
+				width: 8rem;
+				height: 8rem;
+			}
 		}
 
 		&-2 {
@@ -301,6 +396,23 @@
 			height: 30rem;
 			position: absolute;
 			left: 12rem;	
+
+			@include respond(tab-land) {
+				width: 20rem;
+				height: 25rem;
+			}
+
+			@include respond(tab-port) {
+				width: 15rem;
+				height: 15rem;
+				left: 9rem;
+			}
+
+			@include respond(phone) {
+				width: 8rem;
+				height: 8rem;
+				left: 4.5rem;
+			}
 		}
 	}
 
@@ -314,8 +426,34 @@
 		border-top-right-radius: 50px;
 		border-top-left-radius: 50px;
 
+		@include respond(tab-land) {
+			padding: 2.0rem 2.3rem;
+		}
+
+		@include respond(tab-port) {
+			padding: 1rem 1rem;
+		}
+		
+
+		@include respond(phone) {
+			width: 50%;
+			align-items: center;
+			align-content: center;
+			justify-content: center;
+			margin-left: 20vw;
+		}
+		
+
 		&-text {
 			width: 50%;
+
+			@include respond(tab-port) {
+				width: 25%;
+			}
+	
+			@include respond(phone) {
+				width: 20%;
+			}
 		}
 
 		&-img {
@@ -325,12 +463,42 @@
 				width: 12rem;
 				height: 12rem;
 				margin-left: 3rem;
+
+				@include respond(tab-land) {
+					width: 9.5rem;
+					height: 9.5rem;
+				}
+
+				@include respond(tab-port) {
+					width: 5rem;
+					height: 5rem;
+				}
+
+				@include respond(phone) {
+					width: 3.5rem;
+					height: 3.5rem;
+				}
 			}
 
 			&-2 {
 				width: 12rem;
 				height: 12rem;
 				margin-left: 3rem;
+
+				@include respond(tab-land) {
+					width: 9.5rem;
+					height: 9.5rem;
+				}
+
+				@include respond(tab-port) {
+					width: 5rem;
+					height: 5rem;
+				}
+
+				@include respond(phone) {
+					width: 3.5rem;
+					height: 3.5rem;
+				}
 			}
 		}
 	}
