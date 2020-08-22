@@ -8,7 +8,7 @@
     font-family: $font-primary;
     color: $color-primary;
 
-    @include respond(tab-port) {
+    @include respond(tablet) {
         padding: 0rem 0rem;
     }
     
@@ -23,7 +23,7 @@
         width: 20%;
         color: $color-primary;
 
-        @include respond(tab-port) {
+        @include respond(tablet) {
             font-size: 1rem;
         }
 
@@ -110,7 +110,7 @@
         font-weight: 600;
         margin: 0 0.3rem;
 
-        @include respond(tab-port) {
+        @include respond(tablet) {
             font-size: 1rem;
         }
 

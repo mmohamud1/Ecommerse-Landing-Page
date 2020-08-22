@@ -4,7 +4,11 @@
     font-weight: 600;
     font-size: 2.5rem;
 
-    @include respond(tab-port) {
+    @include respond(big-desktop) {
+        font-size: 3.5rem;
+    }
+
+    @include respond(tablet) {
         font-size: 1.4rem;
     }
    
@@ -15,7 +19,12 @@
     line-height: 1.7rem;
     margin-bottom: 2.5rem;
 
-    @include respond(tab-port) {
+    @include respond(big-desktop) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    @include respond(tablet) {
         font-size: 0.8rem;
     }
 
@@ -32,7 +41,12 @@
     font-weight: 700;
     font-size: 2.8rem;
 
-    @include respond(tab-port) {
+    @include respond(big-desktop) {
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+    }
+
+    @include respond(tablet) {
         font-size: 1.4rem;
         line-height: 2rem;
     }
@@ -49,7 +63,12 @@
     line-height: 1.7rem;
     margin-bottom: 1.0rem;
 
-    @include respond(tab-port) {
+    @include respond(big-desktop) {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    @include respond(tablet) {
         font-size: 0.8rem;
         line-height: 1rem;
     }
@@ -66,11 +85,11 @@
     font-size: 4.5rem;
     font-weight: 600;
 
-    @include respond(tab-land) {
+    @include respond(laptop) {
         font-size: 3.5rem;
     }
 
-    @include respond(tab-port) {
+    @include respond(tablet) {
         font-size: 1.6rem;
         line-height: 2rem;
     }
@@ -97,18 +116,18 @@
     font-size: 2.0rem;
     line-height: 2.5rem;
 
-    @include respond(tab-land) {
+    @include respond(laptop) {
         font-size: 1.2rem;
         line-height: 2rem;
     }
 
-    @include respond(tab-port) {
+    @include respond(tablet) {
         font-size: 1rem;
         line-height: 1.5rem;
     }
 
     @include respond(phone) {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
         line-height: 1rem;
     }
 
