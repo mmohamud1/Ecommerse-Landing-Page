@@ -9,7 +9,7 @@
     color: $color-primary;
 
     @include respond(tablet) {
-        padding: 0rem 0rem;
+        padding: 0rem .8rem;
     }
     
     @include respond(phone) {
@@ -43,8 +43,6 @@
 	    align-items: center;
         width: 80%;
 
-       
-        
         &-responsive {
             display: inline-block;
             width: 70%;
@@ -69,7 +67,9 @@
         background: none;
 
         @include respond(phone) {
-            display: none;
+            width: 75%;
+            height: 10px;
+            font-size: 10px;
         }
         
         &-input {
@@ -84,15 +84,24 @@
             transition: all .2s;
             margin-right: -1.8rem;
             
+            @include respond(phone) {
+                height: 20px;
+                padding: .3rem .7rem;
+                margin-left: 1rem;
+            }
 
             &:focus {
                 outline: none;
                 width: 100%;
-                background-color: $color-white;
+                background-color: $color-white;   
             }
     
             &::-webkit-input-placeholder {
                 font-weight: 400;
+
+                @include respond(phone) {
+                    font-size: 10px;
+                }
             }
         }
 
@@ -101,6 +110,14 @@
             outline: none;
             background: none;
             border: none;
+            cursor: pointer;
+
+            @include respond(phone) {
+               height: 4px;
+               width: 4px;
+               margin-left: 10px;
+               margin-bottom: 5px;
+            }
         }
     }
 
@@ -124,4 +141,3 @@
         }
     }
 }
-

@@ -191,7 +191,7 @@ body {
   color: #6a6b6d; }
   @media only screen and (max-width: 900px) {
     .nav {
-      padding: 0rem 0rem; } }
+      padding: 0rem .8rem; } }
   @media only screen and (max-width: 630px) {
     .nav {
       padding: 0rem .5rem; } }
@@ -232,7 +232,9 @@ body {
     background: none; }
     @media only screen and (max-width: 630px) {
       .nav-search {
-        display: none; } }
+        width: 75%;
+        height: 10px;
+        font-size: 10px; } }
     .nav-search-input {
       font-family: inherit;
       font-size: inherit;
@@ -244,17 +246,32 @@ body {
       width: 90%;
       transition: all .2s;
       margin-right: -1.8rem; }
+      @media only screen and (max-width: 630px) {
+        .nav-search-input {
+          height: 20px;
+          padding: .3rem .7rem;
+          margin-left: 1rem; } }
       .nav-search-input:focus {
         outline: none;
         width: 100%;
         background-color: #fff; }
       .nav-search-input::-webkit-input-placeholder {
         font-weight: 400; }
+        @media only screen and (max-width: 630px) {
+          .nav-search-input::-webkit-input-placeholder {
+            font-size: 10px; } }
     .nav-search-button {
       height: 46px;
       outline: none;
       background: none;
-      border: none; }
+      border: none;
+      cursor: pointer; }
+      @media only screen and (max-width: 630px) {
+        .nav-search-button {
+          height: 4px;
+          width: 4px;
+          margin-left: 10px;
+          margin-bottom: 5px; } }
   .nav-link {
     text-decoration: none;
     color: #6a6b6d;
@@ -621,14 +638,15 @@ body {
         padding: 2.0rem 2.3rem; } }
     @media only screen and (max-width: 900px) {
       .sales-card-2 {
-        width: 90%; } }
+        width: 90%;
+        margin-left: 1vh; } }
     @media only screen and (max-width: 630px) {
       .sales-card-2 {
         width: 65%;
         align-items: center;
         align-content: center;
         justify-content: center;
-        margin-left: 10vw; } }
+        margin-left: 9vw; } }
     .sales-card-2-text {
       width: 50%; }
       @media only screen and (max-width: 900px) {
@@ -655,10 +673,6 @@ body {
           .sales-card-2-img-1 {
             width: 5rem;
             height: 5rem; } }
-        @media only screen and (max-width: 630px) {
-          .sales-card-2-img-1 {
-            width: 4.9rem;
-            height: 4.9rem; } }
       .sales-card-2-img-2 {
         width: 12rem;
         height: 12rem;
