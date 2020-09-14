@@ -22,6 +22,7 @@
     @include respond(big-desktop) {
         font-size: 1.5rem;
         line-height: 2rem;
+        font-weight: 300;
     }
 
     @include respond(tablet) {

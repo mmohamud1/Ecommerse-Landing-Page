@@ -63,6 +63,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4rem; }
+    @media only screen and (min-width: 1700px) {
+      .stock-grid {
+        grid-gap: 7.5rem; } }
     @media only screen and (max-width: 900px) {
       .stock-grid {
         grid-template-columns: repeat(2, 1fr); } }
@@ -338,6 +341,10 @@ body {
   border-bottom-right-radius: 25px;
   font-size: 1.3rem;
   font-weight: 500; }
+  @media only screen and (max-width: 350px) {
+    .btn-med {
+      font-size: 0.7rem;
+      padding: .3rem 0.6rem; } }
   .btn-med:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -706,14 +713,6 @@ body {
     position: relative;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px; }
-    @media only screen and (max-width: 1200px) {
-      .stock-card-top {
-        width: 16rem;
-        height: 16rem; } }
-    @media only screen and (max-width: 630px) {
-      .stock-card-top {
-        width: 14rem;
-        height: 14rem; } }
     .stock-card-top-img {
       height: 18rem;
       width: 18rem;
@@ -722,14 +721,18 @@ body {
       left: 50%;
       margin-right: -50%;
       transform: translate(-50%, -50%); }
+      @media only screen and (min-width: 1700px) {
+        .stock-card-top-img {
+          width: 20rem;
+          height: 20rem; } }
       @media only screen and (max-width: 1200px) {
         .stock-card-top-img {
           width: 14rem;
           height: 14rem; } }
-      @media only screen and (max-width: 630px) {
+      @media only screen and (max-width: 350px) {
         .stock-card-top-img {
-          width: 12rem;
-          height: 12rem; } }
+          width: 11rem;
+          height: 11rem; } }
   .stock-card-bottom {
     height: auto;
     width: 100%;
@@ -739,12 +742,6 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #fff; }
-    @media only screen and (max-width: 1200px) {
-      .stock-card-bottom {
-        width: 16rem; } }
-    @media only screen and (max-width: 630px) {
-      .stock-card-bottom {
-        width: 14rem; } }
     .stock-card-bottom-rating {
       font-size: 1.3rem;
       margin-bottom: 0.3rem;
@@ -855,6 +852,10 @@ body {
         text-align: center;
         padding: 1.5rem;
         display: block; }
+        @media only screen and (max-width: 350px) {
+          .footer-nav-link:link, .footer-nav-link:visited {
+            font-size: 0.7rem;
+            padding: .3rem 0.6rem; } }
       .footer-nav-link:hover, .footer-nav-link:active {
         background-color: rgba(106, 107, 109, 0.05);
         transform: translateY(-3px);

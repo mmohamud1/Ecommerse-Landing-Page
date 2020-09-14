@@ -69,6 +69,11 @@
 	font-size: 1.3rem;
 	font-weight: 500;
 
+	@include respond(small-phone) {
+		font-size: 0.7rem;
+		padding: .3rem 0.6rem;
+	}
+
 	&:hover {
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
@@ -554,24 +559,12 @@
 	margin-bottom: 2rem;
 	width: 100%;
 
-	
-
 	&-top {
 		height: 20rem;
 		width: 100%;
 		position: relative;
 		border-top-right-radius: 50px;
 		border-top-left-radius: 50px;
-
-		@include respond(laptop) {
-			width: 16rem;
-			height: 16rem;
-		}
-
-		@include respond(phone) {
-			width: 14rem;
-			height: 14rem;
-		}
 
 		&-img {
 			height: 18rem;
@@ -582,14 +575,19 @@
 			margin-right: -50%;
 			transform: translate(-50%, -50%);
 
+			@include respond(big-desktop) {
+				width: 20rem;
+				height: 20rem;
+			}
+
 			@include respond(laptop) {
 				width: 14rem;
 				height: 14rem;
 			}
 
-			@include respond(phone) {
-				width: 12rem;
-				height: 12rem;
+			@include respond(small-phone) {
+				width: 11rem;
+				height: 11rem;
 			}
 		}
 	}
@@ -603,14 +601,6 @@
 		align-items: center;
 		justify-content: center;
 		background-color: $color-white;
-
-		@include respond(laptop) {
-			width: 16rem;
-		}
-
-		@include respond(phone) {
-			width: 14rem;
-		}
 
 		&-rating {
 			font-size: 1.3rem;
