@@ -552,34 +552,13 @@
 	border-top-right-radius: 50px;
 	border-top-left-radius: 50px;
 	margin-bottom: 2rem;
+	width: 100%;
 
-	@include respond(big-desktop) {
-        margin-left: 5.9rem;
-	}
-
-	@include respond(desktop) {
-        margin-left: 2.9rem;
-	}
 	
-	@include respond(laptop) {
-        margin-left: 1.5rem;
-    }
-
-    @include respond(tablet) {
-       margin-left: 1.3rem;
-    }
-
-    @include respond(phone) {
-        margin-right: 1rem;
-	}
-	
-	@include respond(small-phone) {
-        margin-right: 0.5rem;
-    }
 
 	&-top {
 		height: 20rem;
-		width: 20rem;
+		width: 100%;
 		position: relative;
 		border-top-right-radius: 50px;
 		border-top-left-radius: 50px;
@@ -617,7 +596,7 @@
 
 	&-bottom {
 		height: auto;
-		width: 20rem;
+		width: 100%;
 		padding: 1rem 2rem;
 		display: flex;
 		flex-direction: column;
@@ -636,6 +615,7 @@
 		&-rating {
 			font-size: 1.3rem;
 			margin-bottom: 0.3rem;
+			text-align: center;
 
 			@include respond(laptop) {
 				font-size: 1.1rem;
@@ -649,6 +629,7 @@
 		&-title {
 			margin-bottom: 0.1rem;
 			font-size: 1.5rem;
+			text-align: center;
 
 			@include respond(laptop) {
 				font-size: 1.3rem;
@@ -662,6 +643,7 @@
 		&-text {
 			margin-left: 1.1rem;
 			margin-bottom: .4rem;
+			text-align: center;
 
 			@include respond(phone) {
 				font-size: 0.8rem;

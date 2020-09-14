@@ -62,7 +62,7 @@ body {
   .stock-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem; }
+    grid-gap: 4rem; }
     @media only screen and (max-width: 900px) {
       .stock-grid {
         grid-template-columns: repeat(2, 1fr); } }
@@ -698,28 +698,11 @@ body {
   color: #6a6b6d;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
-  margin-bottom: 2rem; }
-  @media only screen and (min-width: 1700px) {
-    .stock-card {
-      margin-left: 5.9rem; } }
-  @media only screen and (max-width: 1700px) {
-    .stock-card {
-      margin-left: 2.9rem; } }
-  @media only screen and (max-width: 1200px) {
-    .stock-card {
-      margin-left: 1.5rem; } }
-  @media only screen and (max-width: 900px) {
-    .stock-card {
-      margin-left: 1.3rem; } }
-  @media only screen and (max-width: 630px) {
-    .stock-card {
-      margin-right: 1rem; } }
-  @media only screen and (max-width: 350px) {
-    .stock-card {
-      margin-right: 0.5rem; } }
+  margin-bottom: 2rem;
+  width: 100%; }
   .stock-card-top {
     height: 20rem;
-    width: 20rem;
+    width: 100%;
     position: relative;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px; }
@@ -749,7 +732,7 @@ body {
           height: 12rem; } }
   .stock-card-bottom {
     height: auto;
-    width: 20rem;
+    width: 100%;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
@@ -764,7 +747,8 @@ body {
         width: 14rem; } }
     .stock-card-bottom-rating {
       font-size: 1.3rem;
-      margin-bottom: 0.3rem; }
+      margin-bottom: 0.3rem;
+      text-align: center; }
       @media only screen and (max-width: 1200px) {
         .stock-card-bottom-rating {
           font-size: 1.1rem; } }
@@ -773,7 +757,8 @@ body {
           font-size: 0.8rem; } }
     .stock-card-bottom-title {
       margin-bottom: 0.1rem;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      text-align: center; }
       @media only screen and (max-width: 1200px) {
         .stock-card-bottom-title {
           font-size: 1.3rem; } }
@@ -782,7 +767,8 @@ body {
           font-size: 1rem; } }
     .stock-card-bottom-text {
       margin-left: 1.1rem;
-      margin-bottom: .4rem; }
+      margin-bottom: .4rem;
+      text-align: center; }
       @media only screen and (max-width: 630px) {
         .stock-card-bottom-text {
           font-size: 0.8rem; } }
